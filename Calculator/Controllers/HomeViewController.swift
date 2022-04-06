@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Page3ViewController: UIViewController {
+class HomeViewController: UIViewController {
     //outlets
     @IBOutlet weak var Sarlavha: UILabel!
     
@@ -50,7 +50,7 @@ class Page3ViewController: UIViewController {
         
         
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(Page3ViewController.SarlavhaClick(_:)))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.SarlavhaClick(_:)))
         Sarlavha.isUserInteractionEnabled = true
         Sarlavha.addGestureRecognizer(tap)
         
