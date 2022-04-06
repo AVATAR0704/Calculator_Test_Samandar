@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    //outlets
+    //MARK: outlets
     @IBOutlet weak var Sarlavha: UILabel!
     
     @IBOutlet weak var ResultLabel: UILabel!
@@ -29,14 +29,14 @@ class HomeViewController: UIViewController {
     }
 
   
-// Identifier
+//MARK: Identifier
     var bool_AC = true, S1:Double = 0.0, S2 = 0.0, boolAmal = false, amal = "", boolAmal2 = false, boolequal = true,boolError = true
       
  
     
-//functions
+//MARK: functions
     
-//view
+
     @objc func SarlavhaClick(_ sender: UITapGestureRecognizer){
         let alert = UIAlertController(title: "INFORMATION", message: "This is create SAMANDARBEK", preferredStyle: UIAlertController.Style.alert)
         
@@ -95,7 +95,7 @@ class HomeViewController: UIViewController {
         
         
     }
-//backent
+//MARK: backent
     func Remoove(_ str: String) -> String {
         var str2 = str
         str2.removeLast()
@@ -161,7 +161,7 @@ class HomeViewController: UIViewController {
    
     
     
-//Actions
+//MARK: Actions
     @IBAction func InsertButtonInLabel(_ sender: UIButton) {
        
         
